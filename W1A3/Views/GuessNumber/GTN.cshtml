@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewData["Title"] = "GTN";
+}
+
+@if (ViewBag.Message != null)
+{
+
+  <p>@ViewBag.Message</p>
+}
+
+<h1>Guess a number (1-100)</h1>
+<form asp-controller="GuessNumber" asp-action="GTN" method="post">
+    <input type="number" name="guessedNumber" />
+    <input type="submit" value="Guess" />
+</form>
+
+
